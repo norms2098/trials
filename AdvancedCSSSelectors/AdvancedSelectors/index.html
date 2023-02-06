@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced CSS Selectors Exercise</title>
+</head>
+<body>
+    <div class="container">
+        container using > operator will select all children of container > > will select grandchildren
+        <div class="child group1">
+            child group1
+            <div class="grand-child group1">grandchild group1</div>
+        </div>
+        <div class="child group2">child group2
+            <div class="grand-child group2">grandchild group2</div>
+        </div>
+        <div class="child group3">child group3
+            <div class="grand-child group3">grandchild group3</div>
+        </div>
+    </div>
+    <div class="container2">
+        container using + operator will select next adjacent div + + will select child after the div + selected
+        <div class="container2_child group1">
+            child group1
+            <div class="container2_grand-child group1">grandchild group1</div>
+        </div>
+        <div class="container_2child group2">child group2
+            <div class="container2_grand-child group2">grandchild group2</div>
+        </div>
+        <div class="container2_child group3">child group3
+            <div class="container2_grand-child group3">grandchild group3</div>
+        </div>
+    </div>
+    <div class="container3">
+        container using ~ operator: this will select all of container3_child's siblings except container3_child
+        <div class="container3_child group1">
+            child group1
+            <div class="container3_grand-child group1">grandchild group1</div>
+        </div>
+        <div class="container3_child group2">child group2
+            <div class="container3_grand-child group2">grandchild group2</div>
+        </div>
+        <div class="container3_child group3">child group3
+            <div class="container3_grand-child group3">grandchild group3</div>
+        </div>
+    </div>
+</body>
+</html>
