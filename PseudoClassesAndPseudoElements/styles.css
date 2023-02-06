@@ -1,0 +1,10 @@
+.container{
+    background-color: lightgreen;
+}
+.container:nth-child(even){
+    color:red;
+}
+
+.container:first-child{
+    border:1px solid black
+}
