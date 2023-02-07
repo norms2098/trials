@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.container{
+    width:100%;
+}
+.bg {
+    position:absolute;
+    z-index:-1; 
+    width: 100%;
+    margin:0;
+    padding: 0;
+    /*z index is a property for overlapping elements. Elements with higher index will be placed on top*/
+}
+.caption-container{
+    background-color: black;
+    width:100%;
+    opacity: 0.6;
+    color:white;
+    position: absolute;
+}
+.caption-body{
+    text-align:center;
+    top:8rem;
+    font-size: 1.2em;
+    font-family: roboto;
+}
+.caption-heading{
+    position: absolute;
+}

@@ -1,0 +1,39 @@
+:root.dark{
+    --border-btn: 1px solid rgb(220, 220, 220);
+  --color-base-bg: rgb(18, 18, 18);
+  --color-base-text: rgb(240, 240, 240);
+  --color-btn-bg: rgb(36, 36, 36);
+}
+
+:root.light{
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+}
+body,.setThemebtn{
+    color:var(--color-base-text);
+}
+body{
+    background-color: var(--color-base-bg);
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+.setThemebtn{
+    background-color: var(--color-btn-bg);
+    border:var(--border-btn);
+    font-size: 1.125rem;
+    padding: 10px 20px;
+}
+
+.setThemebtn:hover{
+    cursor: pointer;
+}
+
+.setThemebtn:focus{
+    outline:var(--border-btn)
+}
