@@ -1,11 +1,15 @@
-const PersonFactory = (name,age) => {
-    const sayHello = () => {
-        console.log(`Hello ${name},${age}`);
-    }
-    return {name,age,sayHello}
+const Person = (name) => {
+    const sayName = () => console.log(`my name is ${name}`);
+    return {sayName};
 }
-const jeff = PersonFactory('Jeff','27');
 
-console.log(`Name: ${jeff.name}`);
-console.log(`Age: ${jeff.age}`);
-jeff.sayHello();
+const Nerd = (name) => {
+    const prototype = Person(name);
+    const doSomethingNerdy = () => console.log('nerd stuff.');
+    return Object.assign({},prototype,{doSomethingNerdy})
+}
+
+const jeff = Nerd('jeff');
+
+jeff.sayName();
+jeff.doSomethingNerdy();
